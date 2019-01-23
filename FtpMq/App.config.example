@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="server" value="example.com" />
+    <add key="serverPort" value="21" />
+    <add key="login" value="admin" />
+    <add key="password" value="password" />
+    <add key="rootDir" value="/dir" />
+  </appSettings>
+</configuration>
