@@ -25,6 +25,7 @@
 
             Write(exampleCommand, client);
             client.Disconnect();
+            client.Dispose();
         }
 
         private static void Write(Helper.Command exampleCommand, FluentFTP.FtpClient client)
@@ -41,6 +42,13 @@
                     stream.Close();
                 }
             }
+        }
+
+        internal static void Divrem(int x, int y)
+        {
+            var result = Math.DivRem(x, y, out int z);
+
+            Console.WriteLine($"{result} and {z}");
         }
     }
 }
